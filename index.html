@@ -231,15 +231,18 @@
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
+             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
                 
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" placeholder="Message" class="contact__input"></textarea>
-                        <input type="button" value="Send" class="contact__button button">
-                    </form>
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact__form">
+                        
+                        <input type="hidden" name="access_key" value="b39b03bd-b014-49a0-ac5b-4b658ffee262">
+                        <input type="text" id="name" name="name" placeholder="Name" class="contact__input" required>
+                        <input type="email" id="email" name="email" placeholder="Email" class="contact__input" required>
+                        <textarea name="message" id="message" cols="0" rows="10" placeholder="Message" class="contact__input" required></textarea>
+                        <input type="submit" value="Send" class="contact__button button">
+                   </form>
                 </div>
             </section>
         </main>
